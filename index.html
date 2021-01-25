@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<body bgcolor="6f9eaf">
+</body>
+</head>
+<body>
+    <h1 align = "center" vertical-align = "center" style = "color:#a9294f; font-family:URW Chancery L, cursive; font-size: 75px;">COUNTER</h1>
+    <div id="container">
+    <div align = "center" style = "color:#a9294f; font-family:URW Chancery L, cursive; font-size: 75px;" id="count">0</div>
+      <button align = "center" style = "color:#a9294f; font-family:URW Chancery L, cursive; font-size: 35px;" id="increment">+</button><button align = "center" style = "color:#a9294f; font-family:URW Chancery L, cursive; font-size: 35px;" id="reset">reset</button><button align = "center"style = "color:#a9294f; font-family:URW Chancery L, cursive; font-size: 35px;" id="dicrement">-</button>
+    </div>
+
+<script>
+let add = document.getElementById("increment");
+let remove = document.getElementById('dicrement');
+let reset = document.getElementById('reset');
+
+let int = document.getElementById("count");
+let integer = 0;
+add.addEventListener('click', function(){
+  integer += 1;
+  int.innerHTML = integer;
+})
+
+remove.addEventListener('click', function(){
+  integer -= 1;
+  int.innerHTML = integer;
+})
+
+reset.addEventListener('click', function(){
+  integer = 0;
+  int.innerHTML = integer;
+})
+</script>
+</body>
+<style>
+#container{
+  height: 350px;
+  width: 800px;
+  border: 20px solid #fbf6f0;
+  margin: 50px auto;
+  background: #204051;
+}
+#count{
+  height: 25px;
+  width: 750px;
+  margin-top: 50px;
+}
+#reset{
+  height: 50px;
+  width: 200px;
+  margin-top: 100px;
+  margin-left: 10px;
+  background: #fbf6f0;
+  border:  #fbf6f0;
+}
+#increment{
+  height: 50px;
+  width: 200px;
+  margin-top: 175px;
+  margin-left: 70px;
+  background: #fbf6f0;
+  border:  #fbf6f0;
+}
+#dicrement{
+  height: 50px;
+  width: 200px;
+  margin-top: 100px;
+margin-left: 10px;
+background: #fbf6f0;
+border:  #fbf6f0;
+}
+</style>
+</html>
